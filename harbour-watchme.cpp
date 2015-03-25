@@ -13,7 +13,7 @@ int main (int argc, char * argv []) {
     QQuickView * view = SailfishApp::createView ();
     view->engine()->rootContext ()->setContextProperty ("Shared", new SharedObject (app));
     view->engine()->rootContext ()->setContextProperty ("HomePath", QUrl::fromLocalFile (QDir::homePath ()));
-    view->setSource (QUrl ("qrc:///harbour-videogallery.qml"));
+    view->setSource (QUrl ("qrc:///harbour-watchme.qml"));
     view->show ();
     return app->exec ();
 }
