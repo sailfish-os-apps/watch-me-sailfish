@@ -1,0 +1,3 @@
+[submodule "video-gallery"]
+	path = video-gallery
+	url = git@gitlab.unique-conception.org:qt-small-apps/video-gallery.git

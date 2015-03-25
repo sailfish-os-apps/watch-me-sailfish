@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>harbour-videogallery.png</file>
         <file>harbour-videogallery.qml</file>
+        <file>video-gallery/Helpers.js</file>
+        <file>video-gallery/VideoGallery.qml</file>
     </qresource>
 </RCC>
