@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>harbour-videogallery.png</file>
+        <file>harbour-videogallery.qml</file>
+    </qresource>
+</RCC>
