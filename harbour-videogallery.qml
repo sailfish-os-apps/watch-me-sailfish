@@ -7,7 +7,7 @@ ApplicationWindow {
     cover: Component {
         CoverBackground {
             Label {
-                text: qsTr ("Video Gallery");
+                text: qsTr ("Watch'me");
                 anchors.centerIn: parent;
             }
         }
@@ -16,7 +16,11 @@ ApplicationWindow {
         Page {
             allowedOrientations: (gallery.isPlaying ? Orientation.Landscape :  Orientation.All);
 
-            VideoGallery { id: gallery; }
+            VideoGallery {
+                id: gallery;
+                fontSize: Theme.fontSizeMedium;
+                fontName: Theme.fontFamilyHeading;
+            }
         }
     }
 }
