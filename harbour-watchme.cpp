@@ -10,6 +10,7 @@
 
 int main (int argc, char * argv []) {
     QGuiApplication * app = SailfishApp::application (argc, argv);
+    app->setApplicationName ("harbour-watchme");
     QQuickView * view = SailfishApp::createView ();
     view->engine()->rootContext ()->setContextProperty ("Shared", new SharedObject (app));
     view->engine()->rootContext ()->setContextProperty ("HomePath", QUrl::fromLocalFile (QDir::homePath ()));

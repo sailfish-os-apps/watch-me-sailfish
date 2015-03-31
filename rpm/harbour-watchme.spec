@@ -13,8 +13,8 @@ Name:       harbour-watchme
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Video Gallery
-Version:    1.0.0
-Release:    1
+Version:    1.0.1
+Release:    3
 Group:      Qt/Qt
 License:    LGPLv2
 URL:        http://gitlab.unique-conception.org/qt-small-apps/video-gallery
