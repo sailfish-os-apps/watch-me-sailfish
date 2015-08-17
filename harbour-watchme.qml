@@ -14,7 +14,7 @@ ApplicationWindow {
     }
     initialPage: Component {
         Page {
-            allowedOrientations: (gallery.isPlaying ? Orientation.Landscape :  Orientation.All);
+            allowedOrientations: (gallery.isPlaying ? Orientation.Landscape | Orientation.LandscapeInverted :  Orientation.All);
 
             VideoGallery {
                 id: gallery;
@@ -28,6 +28,11 @@ ApplicationWindow {
                 colWidth: Theme.buttonWidthMedium;
                 padding: Theme.paddingMedium;
                 controlSize: Theme.itemSizeMedium;
+                specialPaths: [
+                    { "label" : qsTr ("Home"),         "uri" : "file:///home/nemo" },
+                    { "label" : qsTr ("Android data"), "uri" : "file:///home/nemo/android_storage" },
+                    { "label" : qsTr ("SD Card"),      "uri" : "file:///media/sdcard" },
+                ];
             }
         }
     }
